@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Github Search Modified
+{% endblock %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+Search a repository: <input type="text" id="repo_name">
+
+<ul>
+  {% for r in repos %}
+    <li>{{ r }}</li>
+  {% endfor %} 
+</ul>
+
+{% endblock %}
